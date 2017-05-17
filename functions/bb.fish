@@ -20,7 +20,7 @@ function bb
   end
   set resource $local_path.git
 
-  set -l path $GH_BASE_DIR/$git_host/$local_path
+  set -l path $BB_BASE_DIR/$git_host/$local_path
   if not test -d $path
     git clone git@$git_host:$resource $path
   end
